@@ -12,6 +12,8 @@
 		7DF8DF1020A77A75007BE18B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF8DF0E20A77A75007BE18B /* Main.storyboard */; };
 		7DF8DF1220A77A76007BE18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DF8DF1120A77A76007BE18B /* Assets.xcassets */; };
 		7DF8DF1520A77A76007BE18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DF8DF1320A77A76007BE18B /* LaunchScreen.storyboard */; };
+		7DF8DF2020A77DC8007BE18B /* modelQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8DF1F20A77DC8007BE18B /* modelQuestion.swift */; };
+		7DF8DF2220A78144007BE18B /* modelQuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF8DF2120A78144007BE18B /* modelQuestionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7DF8DF1120A77A76007BE18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DF8DF1420A77A76007BE18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DF8DF1620A77A76007BE18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DF8DF1F20A77DC8007BE18B /* modelQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelQuestion.swift; sourceTree = "<group>"; };
+		7DF8DF2120A78144007BE18B /* modelQuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelQuestionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		7DF8DF0920A77A75007BE18B /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				7DF8DF0A20A77A75007BE18B /* AppDelegate.swift */,
-				7DF8DF0C20A77A75007BE18B /* ViewController.swift */,
-				7DF8DF0E20A77A75007BE18B /* Main.storyboard */,
+				7DF8DF1E20A77B42007BE18B /* Controller */,
+				7DF8DF1D20A77B32007BE18B /* Model */,
+				7DF8DF1C20A77B15007BE18B /* View */,
 				7DF8DF1120A77A76007BE18B /* Assets.xcassets */,
-				7DF8DF1320A77A76007BE18B /* LaunchScreen.storyboard */,
 				7DF8DF1620A77A76007BE18B /* Info.plist */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		7DF8DF1C20A77B15007BE18B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7DF8DF0E20A77A75007BE18B /* Main.storyboard */,
+				7DF8DF1320A77A76007BE18B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DF8DF1D20A77B32007BE18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DF8DF1F20A77DC8007BE18B /* modelQuestion.swift */,
+				7DF8DF2120A78144007BE18B /* modelQuestionList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7DF8DF1E20A77B42007BE18B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DF8DF0A20A77A75007BE18B /* AppDelegate.swift */,
+				7DF8DF0C20A77A75007BE18B /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF8DF2020A77DC8007BE18B /* modelQuestion.swift in Sources */,
 				7DF8DF0D20A77A75007BE18B /* ViewController.swift in Sources */,
 				7DF8DF0B20A77A75007BE18B /* AppDelegate.swift in Sources */,
+				7DF8DF2220A78144007BE18B /* modelQuestionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8HZLK5G4X;
 				INFOPLIST_FILE = MVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8HZLK5G4X;
 				INFOPLIST_FILE = MVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
